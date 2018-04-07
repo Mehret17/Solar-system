@@ -15,30 +15,12 @@
     border-radius: 10%;
 }
 
-
-
-
-/* position: relative;
-/* display: flex; */
-/* min-width: 23%; */
-/* height: 215px; */
-/* text-align: center;
-margin: 50px;
-padding: 20px;
-
-border-radius: 10%;
-} */ */
-
-.card h2{
-    line-height: 175px;
-    position: absolute;
-    width: 200px;
-    height: 250px;
-    text-align: center;
+h2{
+    line-height: 205Px;
 }
 
 .card img{
-    position: absolute;
+    margin: 0 auto;
     width: 230px;
     height: 254px;
     border-radius: 10%;
