@@ -14,8 +14,10 @@ function executeThisCodeAfterFileLoad () {
 const createSolarCard = (newArray) => {
     let domString = "";
     newArray.forEach((planets) => {
+
         domString += `<div class ='card'>`;
-        domString +=   `<h1>${planets.name}</h1>`;
+        domString +=    `<h2 class="planet_name">${planets.name}</h2>`;
+        domString +=    `<img class ='solar_image' src= "${planets.imageUrl}">`;
         domString += `</div>`;
     });
     printToDom (domString, 'card-holder');

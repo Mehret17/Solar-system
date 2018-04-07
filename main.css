@@ -1,0 +1,36 @@
+#card-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    border: 2px solid grey;
+    position: relative;
+    width: 230px;
+    height: 250px;
+    text-align: center;
+    margin: 20px;
+    padding: 3px;
+    border-radius: 10%;
+}
+
+h2{
+    line-height: 205Px;
+}
+
+.card img{
+    margin: 0 auto;
+    width: 230px;
+    height: 254px;
+    border-radius: 10%;
+    display: none;
+}
+
+.card:hover > h2{
+    display: none;
+}
+
+.card:hover > img{
+    display: block;
+}
