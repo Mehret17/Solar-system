@@ -34,3 +34,8 @@ h2{
 .card:hover > img{
     display: block;
 }
+
+.x-button {
+    color: red;
+    text-align: right;
+}
