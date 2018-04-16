@@ -72,9 +72,6 @@ const addEventListener = () => {
 };
 const planet_name = document.getElementsByClassName('planet_name');
 
-// const button = document.getElementById('x-button');
-// button.addEventListener ('click' , startApplication);
-
 
 const solarCard = (e) => {
     let domString = "";
@@ -102,14 +99,39 @@ const button = document.getElementById('x-button');
 button.addEventListener ('click' , startApplication);
 };
 
-// Search Bar
-
-const searchBar = () => {
+//Search Bar
 const search = document.getElementById('search');
-search,addEventListener ()
+search.addEventListener ('keypress', function (e) {
+ searchBar(e)
+ });
+ searchBar = (e) => {
+    console.log ('e', e);
+    var sollar=[];
+const searchPlanet = () => {
+    let filterPlanet = e.target.value.toLowerCase();
+    if (filterPlanet === planet[i].name){
+        console.log("sollar", sollar);
+        sollar;
+        // solarCard()
+    } 
+};
+};
 
 
-}
+
+
+
+
+// const searchBar = (e) => {
+// const search = document.getElementById('search');
+// search.addEventListener ('keypress', e => {
+//     const filterPlanet = e.target.value.toLowerCase();
+//     let filterPlanet = search.toLowerCase.value;
+//     if (filterPlanet === planet[i].name){
+//         solarCard()
+//     } 
+// };
+// };
 
 // function executeThisCodeAfterFileLoad () {
 //     const data = JSON.parse(this.responseText);
